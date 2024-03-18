@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKADEMIK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <header>AKADEMIK</header>
+  <body>
+    <div class="container">
+      <div class="block"></div>
+      <div class="block" id="bbb">
+        <label >LOGOWANIE</label>
+        <!-- error message -->
+        <div class="error">
+          <p>{{ error }}</p>
+        </div>
+        <form action="/login" class="fLogowanie" method="post">
+          <input type="login" placeholder="Login" class="supblock" name="login">
+          <input type="password" placeholder="Hasło" class="supblock" name="password">
+          <button type="submit" class="supblock">Zaloguj się</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function onClick1(){
+        console.log("00");
+      }
+    </script>
+  </body>
+</html>
